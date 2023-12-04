@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Artesanías Marketplace</title>
+</head>
+
+<body>
+    <header>
+        <h1>Artesanías Marketplace</h1>
+        <div class="cart">
+            <img src="/img/car.png" alt="Shopping Cart" style="width: 30px; height: 30px;">
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <!-- Galería de productos -->
+        <div class="product">
+            <img src="/img/amaca.jpg" alt="Product 1">
+            <h3>Producto 1</h3>
+            <p class="price">$19.99</p>
+            <button onclick="addToCart(1)">Agregar al carrito</button>
+        </div>
+        <!-- Agrega más productos según sea necesario -->
+    </section>
+
+    <section class="cart-section">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: $0.00</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
